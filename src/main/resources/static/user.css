@@ -1,0 +1,110 @@
+#root {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  flex-direction: column;
+}
+header {
+  height: 50px;
+  width: 100%;
+  background: #FF5000;
+  color: #fff;
+}
+header .header-title {
+  padding-left: 15px;
+  font-size: 16px;
+}
+header .header-user {
+  height: 50px;
+  min-width: 130px;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 0px 10px;
+}
+header .header-user .header-user-portrait {
+  padding: 0px 10px;
+}
+header .header-user .header-user-portrait .user-portrait-content {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+header .header-user .header-user-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header .header-user .header-user-icon {
+  padding-left: 5px;
+}
+header .header-user .header-user-icon svg {
+  position: relative;
+  top: 2.5px;
+}
+.main {
+  position: relative;
+  width: 100%;
+}
+.main .main-side-nav {
+  position: relative;
+  width: 210px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.main .main-side-nav .side-nav-line {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 1px;
+  background: #FF5000;
+  z-index: 1;
+}
+.main .main-side-nav .side-nav-item {
+  position: relative;
+  padding: 0px 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.main .main-side-nav .side-nav-item .nav-item-icon {
+  display: none;
+  position: absolute;
+  top: 7.5px;
+  right: -9px;
+}
+.main .main-side-nav .side-nav-item .nav-item-content {
+  min-width: 100px;
+  height: 45px;
+  color: #FF5000;
+}
+.main .main-side-nav .side-nav-item .item-content-describe {
+  min-width: 100px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.main .main-side-nav .nav-item-selected .nav-item-icon {
+  display: block;
+}
+.main-content {
+  background: #f5f5f5;
+  padding: 15px;
+}
+.main-content .main-content-operation {
+  padding-bottom: 15px;
+}
+.main-content .main-content-operation .operation-right-select,
+.main-content .main-content-operation .operation-right-search {
+  padding-left: 15px;
+  width: 120px;
+}
+.main-content .main-content-pagination {
+  padding-top: 10px;
+}

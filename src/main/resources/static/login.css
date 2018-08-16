@@ -1,0 +1,82 @@
+.flex-column-center {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  flex-direction: column;
+  align-items: center;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+.main .main-background {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.main .main-login {
+  position: relative;
+  width: 670px;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 2;
+}
+.main .main-login .main-login-logo {
+  padding-top: 45px;
+  width: 235px;
+}
+.main .main-login .main-login-logo .login-logo-content {
+  width: 235px;
+  height: 41px;
+}
+.main .main-login .main-login-logo .login-logo-content img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main .main-login .main-login-lable {
+  padding-top: 10px;
+}
+.main .main-login .main-login-lable span {
+  display: block;
+  padding-left: 210px;
+  font-size: 14px;
+  color: #606266;
+}
+.main .main-login .el-form {
+  padding-top: 35px;
+  width: 460px;
+}
+.main .main-login .el-form .login-form-submit {
+  padding-top: 10px;
+}
+.main-login-error {
+	color: red;
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+.main .main-login .el-form .login-form-submit input {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  line-height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: #ec592d;
+  color: #fff;
+  cursor: pointer;
+}

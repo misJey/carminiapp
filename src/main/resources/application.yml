@@ -1,0 +1,41 @@
+#jsp
+spring:
+  mvc: 
+    view: 
+      prefix: /WEB-INF/page/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://localhost:3306/carminiapp?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+  #使用jpa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: UTC
+  #配置文件  
+  profiles: 
+    active: dev
+  #热启动  
+  devtools:
+        restart:
+            #热部署生效
+          enabled: true
+            #设置重启的目录
+            #additional-paths: src/main/java
+            #classpath目录下的WEB-INF文件夹内容修改不重启
+          exclude: WEB-INF/**
+#上传文件大小限制
+#  servlet: 
+#    multipart: 
+#      enabled: true
+#      max-file-size: 50mb
+#      max-request-size: 50mb  
+
+  
